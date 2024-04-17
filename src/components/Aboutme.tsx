@@ -1,9 +1,9 @@
 // ScrollableComponent.tsx
 
 import { motion } from 'framer-motion';
-import Approaching from '../assets/approaching.jpg';
+// import Approaching from '../assets/approaching.jpg';
 import ImageSliderImg1 from '../assets/approaching.jpg';
-import ImageSliderImg2 from '../assets/profile.jpg';
+// import ImageSliderImg2 from '../assets/profile.jpg';
 import ImageSliderImg3 from '../assets/imageslider3.jpeg';
 import ImageSliderImg4 from '../assets/imageslider4.jpeg';
 import ImageSliderImg5 from '../assets/imageslider5.jpeg';

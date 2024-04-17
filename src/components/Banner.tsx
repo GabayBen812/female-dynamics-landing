@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import BannerImg from '../assets/banner3.png';
 import SubBannerImg from '../assets/banner2.png';
 import SubBannerImgScale from '../assets/bannerAnimation.png';
-import imgForText from '../assets/imgForText.png';
+// import imgForText from '../assets/imgForText.png';
 import '../CssFiles/mobileStyles.css'; // Adjust path as necessary
 
 const Banner = () => {

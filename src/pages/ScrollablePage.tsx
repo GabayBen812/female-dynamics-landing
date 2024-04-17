@@ -2,7 +2,7 @@
 
 import Banner from '../components/Banner';
 import ProfilePic from '../assets/profile.jpg';
-import ScrollableComponent from '../components/ScrollableComponent';
+// import ScrollableComponent from '../components/ScrollableComponent';
 import '../CssFiles/mobileStyles.css'; // Ensure this is imported
 import Aboutme from '../components/Aboutme';
 import Learn from '../components/Learn';
