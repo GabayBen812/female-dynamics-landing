@@ -10,8 +10,8 @@ const Payment = () => {
     return (
         <div className='alertContainer'>
             <div className='alertSubContainer'>
-            <h1>מעבר לקניית הקורס</h1>
-            <p>לאחר הרכישה, יש לשמור את מספר האסמכתא ולהיכנס לקישור הבא:</p>
+            <h1 style={{ textAlign: 'center'}}>מעבר לקניית הקורס</h1>
+            <p style={{ textAlign: 'center'}}>לאחר הרכישה, יש לשמור את מספר האסמכתא ולהיכנס לקישור הבא:</p>
             <a href='https://female-dynamics.netlify.app' className='siteLink'>https://female-dynamics.netlify.app</a>
 
             <br />
