@@ -12,7 +12,7 @@ const Payment = () => {
             <div className='alertSubContainer'>
             <h1>מעבר לקניית הקורס</h1>
             <p>לאחר הרכישה, יש לשמור את מספר האסמכתא ולהיכנס לקישור הבא:</p>
-            <a href='https://female-dynamics.netlify.app'>https://female-dynamics.netlify.app</a>
+            <a href='https://female-dynamics.netlify.app' className='siteLink'>https://female-dynamics.netlify.app</a>
 
             <br />
             <button onClick={handleConfirmation}>לתשלום</button>

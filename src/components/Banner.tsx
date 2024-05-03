@@ -2,12 +2,23 @@
 
 import { motion } from 'framer-motion';
 import BannerImg from '../assets/banner3.png';
-import SubBannerImg from '../assets/banner2.png';
-import SubBannerImgScale from '../assets/bannerAnimation.png';
+// import SubBannerImg from '../assets/banner2.png';
+// import SubBannerImgScale from '../assets/bannerAnimation.png';
 // import imgForText from '../assets/imgForText.png';
 import '../CssFiles/mobileStyles.css'; // Adjust path as necessary
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+    const navigate = useNavigate();
+
+    const moveToPayment = () => {
+        console.log("moveToPayment");
+        navigate('/payment');
+        
+        // window.location.href = "https://pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/";
+      }
+
+      
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -27,8 +38,8 @@ const Banner = () => {
                     <strong className='header'>היישום שלו בפועל והעצמה שלו ישמש אותך <span className='headerSpanBlue'>לכל החיים</span></strong>
                 </div>
 
-                <button className='actionBtn'>
-                    מעניין? השאר פרטים
+                <button className='actionBtn' onClick={() => {moveToPayment()}}>
+                    מעניין? הצטרף אלינו
                 </button>
 
 
@@ -54,7 +65,7 @@ const Banner = () => {
                 <br />
                 <br />
                 
-                <div className="subBannerDiv">
+                {/* <div className="subBannerDiv">
                     <div className='imgWithScale'>
                     <img className='bannerImg' src={SubBannerImg} alt="Feature" />
                     <img className='bannerImgScale' src={SubBannerImgScale} alt="Feature" />
@@ -72,7 +83,7 @@ const Banner = () => {
                 <strong style={{ fontSize: '10vw'}}>
                     עוד משהו להוסיף
                 </strong>
-                </div>
+                </div> */}
             </div>
 
         </motion.div>

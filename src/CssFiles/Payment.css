@@ -115,6 +115,16 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #ffae4586;
-    border-radius: 15PX;
+    border-radius: 15px;
     font-family: "Alef Hebrew", sans-serif;
+    padding: .25rem;
+}
+
+.siteLink {
+    color: white;
+}
+
+.siteLink:hover {
+    color: rgb(255, 231, 152);
+    cursor: pointer;
 }
