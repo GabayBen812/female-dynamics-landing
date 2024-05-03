@@ -33,7 +33,7 @@ body {
 }
 
 .scrollable-page {
-    height: 100vh;
+    height: 150vh;
     overflow-y: hidden;
     overflow-x: hidden;
     display: flex;
