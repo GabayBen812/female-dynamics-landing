@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollablePage from './pages/ScrollablePage'; // Your About page
+import Payment from './pages/Payment';
 
 const App = () => {
   //const isMobile = window.innerWidth < 768;
@@ -8,6 +9,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<ScrollablePage />} />
+        <Route path="/payment" element={<Payment />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>

@@ -489,6 +489,15 @@ body {
     align-items: center;
 }
 
+.dialog {
+    position: absolute;
+    z-index: 1000;
+    background-color: #000;
+    color: #986D0C;
+    width: 100vw;
+    height: 100vh;
+}
+
 
 
 
