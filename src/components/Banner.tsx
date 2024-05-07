@@ -6,16 +6,17 @@ import BannerImg from '../assets/banner3.png';
 // import SubBannerImgScale from '../assets/bannerAnimation.png';
 // import imgForText from '../assets/imgForText.png';
 import '../CssFiles/mobileStyles.css'; // Adjust path as necessary
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
+import DolevVideo from '../assets/DolevVideo.mp4'; 
 
 const Banner = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const moveToPayment = () => {
-        console.log("moveToPayment");
-        navigate('/payment');
+        // console.log("moveToPayment");
+        // navigate('/payment');
         
-        // window.location.href = "https://pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/";
+        window.location.href = "https://pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/";
       }
 
       
@@ -55,7 +56,8 @@ const Banner = () => {
 
 
                 <div className='youtubeVidDiv'>
-                    <iframe className='youtubeVid' src='https://www.youtube.com/embed/ItqsnD46gDQ?si=wmo4QlCy826s_hTe' title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    {/* <iframe className='youtubeVid' src='https://www.youtube.com/embed/ItqsnD46gDQ?si=wmo4QlCy826s_hTe' title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> */}
+                    <iframe className='youtubeVid' src={DolevVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
 
                 <br />
