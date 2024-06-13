@@ -6,9 +6,10 @@ Author : Ngetemplates
   Import Google Web Font
 ---------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 /* ------------------------------
   General
 ---------------------------------*/
@@ -20,7 +21,6 @@ body {
   background: #090909;
   color: #dddddd;
 }
-
 
 h1,
 h2,
@@ -90,7 +90,6 @@ p {
   letter-spacing: 0.5px;
   font-family: "Assistant", sans-serif;
 }
-
 
 ul {
   padding: 0;
@@ -249,7 +248,6 @@ img {
   margin-top: 20px;
 }
 .intro span {
-
 }
 
 /* ------------------------------
@@ -374,10 +372,12 @@ gallery
 .testimonial {
   padding: 150px 0;
 }
-.testimonial .swiper-button-next, .testimonial .swiper-button-prev {
+.testimonial .swiper-button-next,
+.testimonial .swiper-button-prev {
   color: #edcc36;
 }
-.testimonial .swiper-button-next::after, .testimonial .swiper-button-prev::after {
+.testimonial .swiper-button-next::after,
+.testimonial .swiper-button-prev::after {
   font-size: 30px;
 }
 
@@ -512,30 +512,31 @@ footer .cp {
   }
 }
 
-
-
-
-
 .approaching {
   width: 30vw;
   height: 40vh;
   border-radius: 5px;
-font-family: "Karantina", system-ui;
-  border: 1px solid #F5F5F5;
+  font-family: "Karantina", system-ui;
+  border: 1px solid #f5f5f5;
 }
 
 .approachingText {
-  direction: rtl;
+  /* direction: rtl;
   padding: 4px 0;
-  font-family: "Assistant", sans-serif;
+  font-family: "Assistant", sans-serif; */
+  font-size: 22px;
+  font-family: Secular One;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
 }
-
 
 .approachingTextBold {
   direction: rtl;
-  padding: 4px 0;
-  font-family: "Assistant", sans-serif;
-  color: #986D0C;
+  font-size: 24px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: Secular One;
+  color: #986d0c;
 }
 
 .approachingTextFinal {
@@ -544,7 +545,6 @@ font-family: "Karantina", system-ui;
   margin-top: 10px;
   font-family: "Assistant", sans-serif;
 }
-
 
 .title {
   text-align: center;
@@ -555,14 +555,14 @@ font-family: "Karantina", system-ui;
   animation: slow-enter 1s 1;
 }
 
-
 .package-table {
   border-collapse: collapse;
   width: 100%;
-  background-color: #FFD700; /* Light yellow background */
+  background-color: #ffd700; /* Light yellow background */
 }
 
-.package-table th, .package-table td {
+.package-table th,
+.package-table td {
   border: 1px solid orange;
   padding: 8px;
   text-align: center;
@@ -583,7 +583,7 @@ font-family: "Karantina", system-ui;
 }
 
 .purchase-btn:hover {
-  background-color: #FFA500; /* Darker orange */
+  background-color: #ffa500; /* Darker orange */
 }
 
 .purchase-btn-disabled {
@@ -600,8 +600,6 @@ font-family: "Karantina", system-ui;
 }
 
 .animated-underline {
-
-  
 }
 
 .animated-underline {
@@ -617,7 +615,7 @@ font-family: "Karantina", system-ui;
 }
 
 .animated-underline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 110%;
   height: 4px;
@@ -631,61 +629,85 @@ font-family: "Karantina", system-ui;
 .about-btn {
   color: white;
   background-color: #090909;
-  margin: .25rem;
+  margin: 0.25rem;
+  width: fit-content;
 }
-
-
-
 
 .relative {
   position: relative;
   height: auto;
-  margin-bottom: 3vh;
-  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
 }
 
 .full-img {
   width: 100%;
   height: auto;
-  aspect-ratio: 9 / 25;
   object-fit: cover;
 }
 
 .overlay-right {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   bottom: 0;
   top: 0;
   color: white;
   padding: 8px;
-  max-width: 600px;
-  text-align: center;
+  width: 100%;
   margin: 0 auto;
-  margin-right: 2vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: auto;
+  direction: rtl;
 }
 
 .overlay-left {
-  position: absolute;
+  /* position: absolute; */
+  direction: rtl;
   left: 0;
   bottom: 0;
   top: 0;
+  right: 0;
   color: white;
   padding: 8px;
-  max-width: 600px;
-  text-align: center;
+  width: 100%;
   background-color: #0909094b;
   margin: 0 auto;
-  margin-left: 2vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: auto;
 }
 .mt-4 {
   margin-top: 16px;
 }
 
+.madisonOrange {
+  background-color: #986d0c;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  font-size: 24px;
+  direction: rtl;
+}
+
+.madisonYellow {
+  background-color: #aa8736;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: right;
+  font-size: 24px;
+  direction: rtl;
+}
