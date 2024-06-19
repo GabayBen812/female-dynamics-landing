@@ -611,7 +611,6 @@ footer .cp {
   overflow-x: visible;
 }
 
-
 .animated-underline {
   letter-spacing: 0.5px;
   font-family: "Assistant", sans-serif;
@@ -725,7 +724,6 @@ footer .cp {
   /* overflow-y: hidden; */
 }
 
-
 .video-container {
   position: relative;
 }
@@ -751,11 +749,10 @@ footer .cp {
 }
 
 .play-button:before {
-  content: '\25B6'; /* Play icon */
+  content: "\25B6"; /* Play icon */
   font-size: 3em;
   color: white;
 }
-
 
 .siteContainer {
   overflow: hidden;
